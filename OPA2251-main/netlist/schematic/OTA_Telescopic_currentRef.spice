@@ -1,0 +1,14 @@
+** sch_path: /foss/designs/Design/xschem/HPAmplifier/OTA_Telescopic_NO_FLATTEN/Schematics_and_Symbols/OTA_Telescopic_currentRef.sch
+.subckt OTA_Telescopic_currentRef VDD I_P I_N VSS I_P2 I_P3
+*.PININFO VDD:B VSS:B I_P:B I_N:B I_P2:B I_P3:B
+M3 net2 net2 VDD VDD sg13_lv_pmos w=12u l=2.5u ng=2 m=1
+M2 net2 net1 net3 VSS sg13_lv_nmos w=12u l=6.4u ng=2 m=8
+M4 net1 net2 VDD VDD sg13_lv_pmos w=12u l=2.5u ng=2 m=1
+M1 net1 net1 VSS VSS sg13_lv_nmos w=12u l=6.4u ng=2 m=1
+M5 net2 net2 net1 VSS sg13_lv_nmos w=2u l=1u ng=1 m=1
+R2 VSS net3 rppd w=1e-6 l=11.5e-6 m=1 b=0
+M6 I_P net2 VDD VDD sg13_lv_pmos w=12u l=2.5u ng=2 m=1
+M7 I_N net1 VSS VSS sg13_lv_nmos w=12u l=6.4u ng=2 m=1
+M8 I_P2 net2 VDD VDD sg13_lv_pmos w=12u l=2.5u ng=2 m=1
+M9 I_P3 net2 VDD VDD sg13_lv_pmos w=12u l=2.5u ng=2 m=1
+.ends

@@ -1,0 +1,13 @@
+** sch_path: /foss/designs/Design/xschem/HPAmplifier/OTA_Telescopic/Schematics_and_Symbols/OTA_Telescopic_CMFB.sch
+.subckt OTA_Telescopic_CMFB VDD VREF VINN VINP IBIAS CMFB VSS
+*.PININFO VDD:B VSS:B CMFB:O VREF:I IBIAS:B VINP:I VINN:I
+M0 IBIAS IBIAS VDD VDD sg13_lv_pmos w=6u l=0.7u ng=6 m=8
+M1 V1 IBIAS VDD VDD sg13_lv_pmos w=6u l=0.7u ng=6 m=24
+M2 V2 IBIAS VDD VDD sg13_lv_pmos w=6u l=0.7u ng=6 m=24
+M3 CMFB VINP V1 VDD sg13_lv_pmos w=8.995u l=0.35u ng=7 m=4
+M4 net1 VREF V1 VDD sg13_lv_pmos w=8.995u l=0.35u ng=7 m=4
+M5 net1 VREF V2 VDD sg13_lv_pmos w=8.995u l=0.35u ng=7 m=4
+M6 CMFB VINN V2 VDD sg13_lv_pmos w=8.995u l=0.35u ng=7 m=4
+M7 net1 net1 VSS VSS sg13_lv_nmos w=29.97u l=0.20u ng=9 m=1
+M8 CMFB CMFB VSS VSS sg13_lv_nmos w=29.97u l=0.20u ng=9 m=1
+.ends
