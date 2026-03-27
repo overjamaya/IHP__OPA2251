@@ -1,9 +1,0 @@
-25-Mar-2026 23:01:05 | INFO    | KLayout version detected: 0.30.5
-25-Mar-2026 23:01:05 | INFO    | Using DRC JSON file: /foss/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
-25-Mar-2026 23:02:57 | ERROR   | cont generated an exception: Command 'klayout -b -r '/foss/pdks/ihp-sg13g2/libs.tech/klayout/tech/drc/ihp-sg13g2.drc' -rd threads='4' -rd drc_json_default='/foss/pdks/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_tech_default.json' -rd drc_json='/foss/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json' -rd run_mode='flat' -rd precheck_drc='false' -rd disable_extra_rules='false' -rd no_feol='true' -rd no_beol='true' -rd no_offgrid='false' -rd density='false' -rd no_forbidden='true' -rd no_pin='true' -rd no_recommended='false' -rd topcell='user_project_wrapper' -rd input='/foss/designs/Design/xschem/IHP__OPA2251/OPA2251-main/layout/klayout/HPA_project_wrapper.gds' -rd report='/foss/designs/Design/xschem/IHP__OPA2251/OPA2251-main/layout/klayout/drc_run_user_project_wrapper/HPA_project_wrapper_user_project_wrapper_cont.lyrdb' -rd log='/foss/designs/Design/xschem/IHP__OPA2251/OPA2251-main/layout/klayout/drc_run_user_project_wrapper/HPA_project_wrapper_user_project_wrapper_cont.log' -rd tables="cont"' returned non-zero exit status 137.
-26-Mar-2026 01:15:44 | ERROR   | ==================================================================================
-26-Mar-2026 01:15:44 | ERROR   | ❌ --- KLayout DRC Check Failed: Violations were detected in the layout. --- ❌
-26-Mar-2026 01:15:44 | ERROR   | ==================================================================================
-26-Mar-2026 01:15:44 | ERROR   | Violated rules are : {'Pad.fR_M5', 'Pad.fR_M2', 'Pad.fR_TM1', 'Sdiod.d', 'Sdiod.e', 'Pad.fR_M3', 'Pad.d1R', 'Pad.fR_TM2', 'Pad.fR_M4'}
-
-26-Mar-2026 01:15:44 | INFO    | Total DRC Run time: 8079.38 seconds (including execution, analysis, and reporting)
